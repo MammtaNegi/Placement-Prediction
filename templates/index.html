@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+  <header>
+    <div class="content">
+    <form action = "http://localhost:5000/predict">
+     <h1> Excited to know whether you will be <span id="place">Placed</span> or not?<br>
+     THE ANSWER TO ALL YOUR QUESTIONS :) </h1>
+     <input type = "submit" value = "Let's find" class="btn" >
+     </form>
+    </div>
+
+
+  </header>
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+	
+	header {
+	    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../static/background.jpg');
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    height: 100vh;
+	}
+	
+	.content{
+	    width: 1180px;
+	    position: absolute;
+	    top: 60%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+
+	h1 {
+	    color: white;
+	    font-size: 240%;
+	    word-spacing: 5px;
+	    letter-spacing: 3px;
+	    margin-bottom: 20px;
+	    text-transform: uppercase;
+	    font-weight: lighter;
+	}
+
+	#place{
+	    animation: colorchangeplace 1s infinite;
+	}
+	@keyframes colorchangeplace{
+	    0%{color: lavender}
+	    25%{color: goldenrod }
+	    50%{color: turquoise}
+	    100%{color: indianred}
+	}
+
+
+	.btn{
+	    display: inline-block;
+	    padding: 10px 20px;
+	    font-weight: lighter;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    border-radius: 200px;
+	    transition: background-color 0.2s,border 0.2s, color 0.2s;
+	    background-color: transparent;
+	    color: #FFC0CB;
+	    margin-right: 15px;
+	    border: 1px solid #FFC0CB;
+	}
+
+	.btn:hover{
+	    background-color: ivory;
+	}
+
+    </style>
+</body>
+</html>

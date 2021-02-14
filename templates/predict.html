@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+  <header>
+     <h1>Let's know about you </h1>
+
+    <div style="color:pink">
+        <form action="http://localhost:5000/result" method="post">
+
+            <h3>Your 10th percentage?(No need to mention % symbol)</h3>
+            <input id="ssc_p" name="ssc" type="number" min="0" max="100" required="required">
+
+	    <h3>Your 12th percentage?(No need to mention % symbol)</h3>
+            <input id="hsc_p" name="hsc" type="number" min="0" max="100" required="required">
+
+
+            <h3>Select your HSC stream?</h3><br>
+	    <select name="hsc_stream" id="hsc_s" required="required">
+                <option value="1">Arts</option>
+                <option value="2">Commerce</option>
+                <option value="3">Science</option>
+            </select>
+	    
+	    <h3>Your degree percentage?(No need to mention % symbol)</h3>
+            <input id="deg_p" name="deg" type="number" min="0" max="100" required="required">
+
+	    
+	    <h3>Your MBA percentage?(No need to mention % symbol)</h3>
+            <input id="mba_p" name="mba" type="number" min="0" max="100" required="required">
+
+
+            <h3>Select your specialization</h3><br>
+	    <select name="specialization" id="spec" required="required">
+                <option value="1">Marketing & HR</option>
+                <option value="0">Marketing & Finance</option>
+            </select>
+
+	    <h3>Your employability test percentage?(No need to mention % symbol)</h3>
+            <input id="emp_p" name="emp" type="number" min="0" max="100" required="required">
+
+	    <h3>Do you have work experience?</h3>
+	    <select name="work" id="wrkex" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <br><br>
+	    <button class="btn" type="submit "><h2>Predict</h2></button>
+	   
+            <br>
+
+        </form>
+
+  </header>
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+	
+	header {
+	    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../static/form.jpg');
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    height: 100vh;
+	}
+	
+	.content{
+	    width: 1180px;
+	    position: absolute;
+	    top: 60%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+
+	h1 {
+	    color: pink;
+	    font-size: 240%;
+	    word-spacing: 5px;
+	    letter-spacing: 3px;
+	    margin-bottom: 20px;
+	    text-transform: uppercase;
+	    font-weight: lighter;
+	}
+
+
+	.btn{
+	    display: inline-block;
+	    padding: 10px 20px;
+	    font-weight: lighter;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    border-radius: 200px;
+	    transition: background-color 0.2s,border 0.2s, color 0.2s;
+	    background-color: transparent;
+	    color: #FFC0CB;
+	    margin-right: 15px;
+	    border: 1px solid #FFC0CB;
+	}
+
+	.btn:hover{
+	    background-color: ivory;
+	}
+
+    </style>
+</body>
+</html>
